@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>5 minutes burn</title>
+
+    <meta name="description" content="Exercises">
+    <meta name="author" content="ExortApps">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/NoSleep.min.js"></script>
+    
+     
+  </head>
+  <body>
+  	<div class="container-fluid text-center text-warning pb-3">
+  		<h4>Sally Up Challenge</h4>
+      <h5>Just 30 classic squats</h5>
+  		<p>Instructions</p>
+  		<p class="text-left">
+  		* Stand with your back straight and your feet shoulder width apart.<br>
+  		* Before you play the song lower yourself in the squat position.<br>
+  		* On every 'Sally Up' press yourself up and on every 'Sally down' get back in down squat position.<br>
+  		* On 'Old miss Lucy...' part of the song, stay in down squat position.<br>
+  		</p>
+  		<audio id="video" controls>
+		  <source src="../../sounds/flower.mp3" type="audio/mp3">
+		  Your browser does not support the audio element.
+		</audio>
+		<p class="text-left">
+		Song: <a href="https://www.youtube.com/watch?v=6A2V9Bu80J4">Flower</a><br>
+		Artist: <a href="https://www.youtube.com/channel/UCkkiTV-Lnt-m3DQp-ZeFdkA">Moby</a><br>
+		Album: Play - The B Sides<br>
+		Licence by: WMG, [Merlin] PIAS (on behalf of Mute/BMG); BMI - Broadcast Music Inc., PEDL, LatinAutor, Kobalt Music Publishing, Warner Chappell, UMPI, AMRA, CMRRA, and 21 Music Rights Societies
+		</p>
+		
+		<button type="button" class="btn btn-primary btn-sm btn-block" onclick="window.location.href = 'andromo://market306385';">TELL US WHAT YOU THINK</button>
+    <button type="button" class="btn btn-warning btn-sm btn-block" onclick="window.location.href = 'andromo://custompage_1578682686_d37dc80e62';">Reasons to UPGRADE TO PRO</button>
+		<button type="button" class="btn btn-dark text-warning btn-sm btn-block fixed-bottom mb-3" onclick="window.location.href = 'andromo://dashboard';">MAIN MENU</button>
+
+	</div>
+
+	<script>
+		var noSleep = new NoSleep();
+
+		document.addEventListener("mousedown",function enableNoSleep() {
+			document.removeEventListener("mousedown", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+		document.addEventListener("touchend",function enableNoSleep() {
+			document.removeEventListener("touchend", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+    (function() {
+      var hidden = "hidden";
+
+      // Standards:
+      if (hidden in document)
+        document.addEventListener("visibilitychange", onchange);
+      else if ((hidden = "mozHidden") in document)
+        document.addEventListener("mozvisibilitychange", onchange);
+      else if ((hidden = "webkitHidden") in document)
+        document.addEventListener("webkitvisibilitychange", onchange);
+      else if ((hidden = "msHidden") in document)
+        document.addEventListener("msvisibilitychange", onchange);
+      // IE 9 and lower:
+      else if ("onfocusin" in document)
+        document.onfocusin = document.onfocusout = onchange;
+      // All others:
+      else
+        window.onpageshow = window.onpagehide
+        = window.onfocus = window.onblur = onchange;
+
+      function onchange (evt) {
+        document.getElementById("video").pause();
+      }
+
+      // set the initial state (but only if browser supports the Page Visibility API)
+      if( document[hidden] !== undefined )
+        onchange({type: document[hidden] ? "blur" : "focus"});
+    })();
+
+	</script>
+    
+
+    <script src="../../js/bootstrap.min.js"></script> 
+    
+  </body>
+</html>

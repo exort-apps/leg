@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Double Strength</title>
+
+    <meta name="description" content="Exercises">
+    <meta name="author" content="ExortApps">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/NoSleep.min.js"></script>
+    
+    
+     
+  </head>
+  <body>
+  	<div class="container-fluid text-center text-warning">
+  		
+  		<div class="row">
+  			<div class="col-12 my-2">
+	  			<h4>Two weeks workout plan</h4>
+	  			<h6>Yes, it gets harder</h6>
+	  		</div>
+  		</div> <!-- header end -->  			
+
+    <img class="img-fluid mb-2" src="../../img/quads.png" alt="quads"/>
+
+  		<ul class="list-group main-menu">
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal1">Day 1</button>
+  				<input type="checkbox" id="day1tw" name="cbtw" onchange="save1tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal2">Day 2</button>
+  				<input type="checkbox" id="day2tw" name="cbtw" onchange="save2tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal3">Day 3</button>
+  				<input type="checkbox" id="day3tw" name="cbtw" onchange="save3tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal4">Day 4</button>
+  				<input type="checkbox" id="day4tw" name="cbtw" onchange="save4tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal5">Day 5</button>
+  				<input type="checkbox" id="day5tw" name="cbtw" onchange="save5tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal6">Day 6</button>
+  				<input type="checkbox" id="day6tw" name="cbtw" onchange="save6tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal7">Day 7</button>
+  				<input type="checkbox" id="day7tw" name="cbtw" onchange="save7tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal8">Day 8</button>
+  				<input type="checkbox" id="day8tw" name="cbtw" onchange="save8tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal9">Day 9</button>
+  				<input type="checkbox" id="day9tw" name="cbtw" onchange="save9tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal10">Day 10</button>
+  				<input type="checkbox" id="day10tw" name="cbtw" onchange="save10tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal11">Day 11</button>
+  				<input type="checkbox" id="day11tw" name="cbtw" onchange="save11tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal12">Day 12</button>
+  				<input type="checkbox" id="day12tw" name="cbtw" onchange="save12tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal13">Day 13</button>
+  				<input type="checkbox" id="day13tw" name="cbtw" onchange="save13tw()"></input>
+  			</li>
+
+  			<li class="list-group-item d-flex justify-content-between align-items-center mb-1 bg-dark">
+  				<button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modal14">Day 14</button>
+  				<input type="checkbox" id="day14tw" name="cbtw" onchange="save14tw()"></input>
+  			</li>
+		</ul>
+
+
+		<!-- Modals 1-->
+		<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal1Title">Day 1</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Classic Squat - 2 sets, 8 reps per set<img class="w-25" src="../../img/Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 2 sets, 6 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squats - 2 sets, 8 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day1.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 2-->
+		<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal2Title">Day 2</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 2 sets, 9 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Bulgarian Squat - 2 sets, 6 reps each leg per set<img class="w-25" src="../../img/Bulgarian Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Pause Squat - 2 sets, 5 reps per set<img class="w-25" src="../../img/Pause Squat 2s.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day2.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 3-->
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal3Title">Day 3</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 2 sets, 8 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Pistol Squat - 3 sets, 3 reps each leg per set<img class="w-25" src="../../img/Pistol Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 2 sets, 9 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day3.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 4-->
+		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal4Title">Day 4</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Classic Squat - 2 sets, 9 reps per set<img class="w-25" src="../../img/Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 2 sets, 9 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 3 sets, 6 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day4.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 5-->
+		<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal5Title">Day 5</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Pistol Squat - 3 sets, 4 reps each leg per set<img class="w-25" src="../../img/Pistol Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Bulgarian Squat - 2 sets, 7 reps each leg per set<img class="w-25" src="../../img/Bulgarian Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Side Lunge - 2 sets, 8 reps each leg per set<img class="w-25" src="../../img/Side Lunge.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day5.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 6-->
+		<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal6Title">Day 6</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 3 sets, 6 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Classic Squat - 2 sets, 15 reps per set<img class="w-25" src="../../img/Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 3 sets, 8 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day6.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 7-->
+		<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal7Title">Day 7</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Today is a REST DAY you magnificent human. If you really feel like working out, check some of our challenges.
+		        You can continue with this workout plan tomorrow. Cya space cowboy...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = '../../index.html';">Workout Menu</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 8-->
+		<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal8Title">Day 8</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Classic Squat - 3 sets, 9 reps per set<img class="w-25" src="../../img/Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 3 sets, 7 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squats - 3 sets, 9 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day8.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 9-->
+		<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal9Title">Day 9</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 3 sets, 10 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Bulgarian Squat - 2 sets, 9 reps each leg per set<img class="w-25" src="../../img/Bulgarian Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Pause Squat - 2 sets, 10 reps per set<img class="w-25" src="../../img/Pause Squat 2s.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day9.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 10-->
+		<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modal10Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal10Title">Day 10</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 3 sets, 10 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Pistol Squat - 3 sets, 5 reps each leg per set<img class="w-25" src="../../img/Pistol Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 3 sets, 9 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day10.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 11-->
+		<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal11Title">Day 11</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Classic Squat - 3 sets, 12 reps per set<img class="w-25" src="../../img/Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 2 sets, 11 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 3 sets, 11 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day11.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 12-->
+		<div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modal12Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal12Title">Day 12</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Pistol Squat - 3 sets, 6 reps each leg per set<img class="w-25" src="../../img/Pistol Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Bulgarian Squat - 2 sets, 15 reps each leg per set<img class="w-25" src="../../img/Bulgarian Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Side Lunge - 3 sets, 12 reps each leg per set<img class="w-25" src="../../img/Side Lunge.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day12.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 13-->
+		<div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modal13Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal13Title">Day 13</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Today is a REST DAY you magnificent human. If you really feel like working out, check some of our challenges, but be easy on yourself because tomorrow is the last day of your two weeks workout plan. And it's going to be the toughest... Brace yourself, day 14 is coming!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = '../../index.html';">Workout Menu</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Modals 14-->
+		<div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14Title" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-scrollable" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modal14Title">Day 14</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="list-group list-group-flush">
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Lunge - 3 sets, 12 reps each leg per set<img class="w-25" src="../../img/Lunge.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Classic Squat - 4 sets, 17 reps per set<img class="w-25" src="../../img/Squat.gif"/>
+		        	</li>
+
+		        	<li class="list-group-item d-flex justify-content-between align-items-center">
+		        		Wide Squat - 3 sets, 15 reps per set<img class="w-25" src="../../img/Wide Squat.gif"/>
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary px-5" onclick="window.location.href = 'day14.html';">Start workout</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<p class="text-right mr-3 mt-2">Check/uncheck <b>all</b> days. 
+			<span class="text-danger">Cannot be undone!!</span>
+			<input type="button" class="input-bth-colored" id="togglealltw" onclick="togglecheckboxestw('cbtw'), resettw()" value="Go" />
+		</p>
+	</div> <!-- Main container end -->
+
+	<button type="button" class="btn btn-primary mt-2 mb-3 btn-sm btn-block" onclick="window.location.href = 'andromo://market306385';">TELL US WHAT YOU THINK</button>
+
+	<button type="button" class="btn btn-dark text-warning btn-sm btn-block fixed-bottom mb-2" onclick="window.location.href = '../../index.html';">WORKOUT MENU</button>
+
+	<script>
+		var noSleep = new NoSleep();
+
+		document.addEventListener("mousedown",function enableNoSleep() {
+			document.removeEventListener("mousedown", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+		document.addEventListener("touchend",function enableNoSleep() {
+			document.removeEventListener("touchend", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+
+		
+	</script>
+    
+	<script src="../../js/save_scripts_tw.js"></script>
+
+    <script src="../../js/bootstrap.min.js"></script> 
+    
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Weekly Pyramid</title>
+
+    <meta name="description" content="Exercises">
+    <meta name="author" content="ExortApps">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/NoSleep.min.js"></script>
+    
+    
+     
+  </head>
+  <body>
+  	<div class="container-fluid text-center text-warning">
+  		
+  		<div class="row">
+  			<div class="col-12">
+	  			<h4>Classic Squat Pyramid</h4>
+	  			<h5>Weekly workout plan</h5>
+	  		</div>
+  		</div> <!-- header end -->
+
+  		
+  			<div class="row my-3">
+  				<div class="col-6">
+  					<img class="lt-shadow" width="150" alt="Turn on Internet for animated explanation" src="../../img/Squat.gif" />
+  				</div>
+  			<!--	</div>
+  			<div class="row"> -->
+  				<div class="col-6 lt-motiv bg-dark">
+				<div id="quoteContainer"></div>
+				<button type="button" id="requestquote">New Quote</button>
+				</div>
+  			</div>
+  	
+  	<ul class="nav nav-tabs nav-justified mb-2" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active bg-dark text-primary" id="easy-tab" data-toggle="tab" href="#easy" role="tab" aria-controls="easy" aria-selected="true">EASY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-dark text-primary" id="normal-tab" data-toggle="tab" href="#normal" role="tab" aria-controls="normal" aria-selected="false">NORMAL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-dark text-primary" id="hard-tab" data-toggle="tab" href="#hard" role="tab" aria-controls="hard" aria-selected="false">HARD</a>
+      </li>
+    </ul>
+
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="easy" role="tabpanel" aria-labelledby="easy-tab">
+        <table class="table table-borderless text-warning mt-3">
+			  <thead>
+			  	<tr>
+			  		<th colspan="4" class="bg-secondary">196 squats</th>
+			  	</tr>
+			    <tr>
+			      <th scope="col">Day</th>
+			      <th scope="col">Repetitions per set</th>
+			      <th class="min-width-th" scope="col">&#10004;</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">MON</th>
+			      <td>5, 6, 8, 6, 5.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day1" name="cbn" onchange="save1()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">TUE</th>
+			      <td>6, 7, 9, 7, 6.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day2" name="cbn" onchange="save2()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">WED</th>
+			      <td>REST DAY</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day3" name="cbn" onchange="save3()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">THU</th>
+			      <td>7, 7, 10, 7, 7.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day4" name="cbn" onchange="save4()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">FRI</th>
+			      <td>8, 6, 12, 6, 8.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day5" name="cbn" onchange="save5()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">SAT</th>
+			      <td>9, 11, 13, 11, 9.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day6" name="cbn" onchange="save6()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">SUN</th>
+			      <td>REST DAY</td>
+			      <td><input type="button" class="input-bth-colored" id="toggleall1" onclick="togglecheckboxes1('cbn'), reset1()" value="All" />
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+      </div>
+
+      <div class="tab-pane" id="normal" role="tabpanel" aria-labelledby="normal-tab">
+        <table class="table table-borderless text-warning mt-3">
+			  <thead>
+			  	<tr>
+			  		<th colspan="4" class="bg-secondary">333 squats</th>
+			  	</tr>
+			    <tr>
+			      <th scope="col">Day</th>
+			      <th scope="col">Repetitions per set</th>
+			      <th scope="col">&#10004;</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">MON</th>
+			      <td>8, 9, 11, 11, 9, 8.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day11" name="cba" onchange="save11()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">TUE</th>
+			      <td>9, 10, 13, 13, 10, 9.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day22" name="cba" onchange="save22()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">WED</th>
+			      <td>10, 10, 15, 10, 10, 10.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day33" name="cba" onchange="save33()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">THU</th>
+			      <td>REST DAY</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day44" name="cba" onchange="save44()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">FRI</th>
+			      <td>10, 11, 13, 13, 11, 10.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day55" name="cba" onchange="save55()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">SAT</th>
+			      <td>12, 15, 25, 15, 12, 10.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day66" name="cba" onchange="save66()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">SUN</th>
+			      <td>REST DAY</td>
+			      <td><input type="button" class="input-bth-colored" id="toggleall2" onclick="togglecheckboxes2('cba'), reset2()" value="All" /></td>
+			    </tr>
+			  </tbody>
+			</table>
+      </div>
+
+      <div class="tab-pane" id="hard" role="tabpanel" aria-labelledby="hard-tab">
+        <table class="table table-borderless text-warning mt-3">
+			  <thead>
+			  	<tr>
+			  		<th colspan="4" class="bg-secondary">465 squats</th>
+			  	</tr>
+			    <tr>
+			      <th scope="col">Day</th>
+			      <th scope="col">Repetitions per set</th>
+			      <th scope="col">&#10004;</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">MON</th>
+			      <td>20, 25, 20.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day111" name="cbh" onchange="save111()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">TUE</th>
+			      <td>20, 25, 30, 20.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day222" name="cbh" onchange="save222()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">WED</th>
+			      <td>REST DAY</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day333" name="cbh" onchange="save333()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">THU</th>
+			      <td>30, 35, 40, 30.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day444" name="cbh" onchange="save444()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">FRI</th>
+			      <td>REST DAY</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day555" name="cbh" onchange="save555()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">SAT</th>
+			      <td>10, 20, 30, 50, 30, 20, 10.</td>
+			      <td><input class="custom-checkbox" type="checkbox" id="day666" name="cbh" onchange="save666()"></input></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">SUN</th>
+			      <td>REST DAY</td>
+			      <td><input type="button" class="input-bth-colored" id="toggleall3" onclick="togglecheckboxes3('cbh'), reset3()" value="All" /></td>
+			    </tr>
+			  </tbody>
+			</table>
+      </div>
+
+
+  	</div>
+
+
+	</div> <!-- Main container end -->
+
+	<button type="button" class="btn btn-primary btn-sm btn-block" onclick="window.location.href = 'andromo://market306385';">TELL US WHAT YOU THINK</button>
+
+	<button type="button" class="btn btn-dark text-warning btn-sm btn-block" onclick="window.location.href = '../../index.html';">WORKOUT MENU</button>
+
+	<script>
+		var noSleep = new NoSleep();
+
+		document.addEventListener("mousedown",function enableNoSleep() {
+			document.removeEventListener("mousedown", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+		document.addEventListener("touchend",function enableNoSleep() {
+			document.removeEventListener("touchend", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+	</script>
+    
+	<script src="../../js/save_scripts.js"></script>
+
+    <script src="../../js/bootstrap.min.js"></script> 
+    
+  </body>
+</html>

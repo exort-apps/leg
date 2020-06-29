@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>5 minutes burn</title>
+
+    <meta name="description" content="Exercises">
+    <meta name="author" content="ExortApps">
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/NoSleep.min.js"></script>
+     
+  </head>
+  <body>
+  	<div class="container-fluid text-center text-warning">
+  		<div class="col-12">
+  			<h1>New Tab App</h1>
+			<form>
+				<input id="item" type="text" placeholder="New" required />
+			</form>
+
+<h2>Items</h2>
+<ul></ul>
+
+<button>Clear All</button>	
+
+		</div>
+
+	<script>
+		var noSleep = new NoSleep();
+
+		document.addEventListener("mousedown",function enableNoSleep() {
+			document.removeEventListener("mousedown", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+		document.addEventListener("touchend",function enableNoSleep() {
+			document.removeEventListener("touchend", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+	</script>
+    
+	<script src="sch_script.js"></script>
+    <script src="../../js/bootstrap.min.js"></script> 
+    
+  </body>
+</html>

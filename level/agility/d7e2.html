@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>Agility Day 7 Exercise 2</title>
+
+    <meta name="description" content="Exercises">
+    <meta name="author" content="ExortApps">
+
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+<script src="../../js/NoSleep.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
+
+     
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-12">
+
+			<div class="row mb-3">
+				<div class="col-2 px-0">
+					<div class="col-12 lt-btn px-0 lt-shadow">
+						<a class="bg-primary" href="d7e1.html">&#171;</a>
+					</div>
+				</div>
+
+				<div class="col-8">
+					<img id="img-tuckJumps" class="img-fluid lt-shadow" width="200" alt="Refresh the page to reload the image"  />
+				</div>
+
+
+				<div class="col-2 px-0">
+					<div class="col-12 lt-btn px-0 lt-shadow">
+						<a class="bg-primary" href="d7e3.html">&#187;</a>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="row">
+				<div class="col-12">
+					<h6 id="rep-tuckJumps" class="text-warning">
+						Reload if no reps appear.
+					</h6>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 pt-2 lt-tips bg-dark">
+					<div id="tipsContainer" class="tuckJumps">Hit REFRESH to show content.</div>
+					<button type="button" id="requesttips">New Quote</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--	
+		latPlyJumps 	d1e1
+		highKnee 		d1e2
+		latRunning		d2e1
+		boxJumps 		d3e1
+		kneeBoxJumps 	d3e3
+		plyHurdles 		d1e3
+		shuttleRuns 	d6e1
+		latLungeJumps  -- forward and lateral together d7e1
+		drillsL 		d6e2
+		tuckJumps 		d7e2
+		jumpLunges  -- in place 	d7e3
+		latBoxJumps 	d3e2
+		skaterJumps  	d2e2
+		latJump90Forward d2e3
+		latToForwInsLeg  -- Lateral to Forward 90degree on the inside leg -- to each side 	d5e1
+		latToForwOutLeg  -- Lateral to Forward 90degree on the outside leg -- to each side 	d5e2
+		forwToLatInsLeg  -- Forward to Lateral 90degree on the inside leg -- to each side 	d5e3
+		forwToLatOutLeg  -- Forward to Lateral 90degree on the outside leg -- to each side 	d6e3
+-->
+
+	<script>
+		var noSleep = new NoSleep();
+
+		document.addEventListener("mousedown",function enableNoSleep() {
+			document.removeEventListener("mousedown", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+		document.addEventListener("touchend",function enableNoSleep() {
+			document.removeEventListener("touchend", enableNoSleep, false);
+			noSleep.enable();
+		}, false);
+
+	</script>
+
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/scripts_tips.js"></script>
+  </body>
+</html>
