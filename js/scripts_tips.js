@@ -34,32 +34,46 @@ $(document).ready(function(){
     };
 
     var latRunning = {
-      descr: `*** Tips for Lateral Running ***`,
+      descr: `*** Tips for Lateral Running *** <br>
+      Keep your body center low and your feet near to the ground. Move as if you are pushing off the ground beneath you to the side. <br>
+      Focus on the power of your outside leg ie. the pushing leg.`,
       reps: "2 sets - 10 meters left and right lateral runs per set",
       img: "../../img/latRunning.gif"
     };
 
     var boxJumps = {
-      descr: `These are tips for boxJumps`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Box Jumps *** <br>
+      If possible, always set the height of the box to above 80% of your max jump height. We are aiming for intensity over volume. </br>
+      Make sure the landing surface is clean and dry to avoid slipping and injuring yourself. <br>
+      This may seem simple exercise but it's absolute crucial in power increase. There are almost endless variations that you may use to spice up the game. <br>
+      Some variations are to jump with one leg and land on the same leg, jump with both legs and land on single leg, jump with one leg and land with the other leg, etc...`,
+      reps: "3 sets - 4 jumps per set",
       img: "../../img/boxJumps.gif"
     };
 
     var kneeBoxJumps = {
-      descr: `These are tips for kneeBoxJumps`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Kneeling Box Jumps *** <br>
+      As with regular box jumps, we aim for intensity over volume. Set the height of the box above 80% of your max jump height. <br>
+      Here you want the transition from kneeling position to a squat to be as fast as possible. Make sure that you don't turn your knees inward when snapping into squat. <br>
+      Engage your core and keep it tight throughout the movements.`,
+      reps: "3 sets - 3 jumps per set",
       img: "../../img/kneeBoxJumps.gif"
     };
 
     var plyHurdles = {
-      descr: `These are tips for plyHurdles`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Plyometric Hurdles *** <br>
+      Set 5 to 8 hurdles closely one after the other, you can also lay out empty water bottle or anything else to mark the position of the obstacle. <br>
+      In this exercise we aim for jump height while moving forward. Because the obstacles (hurdles) are tightly packed, you don't have to go in deep squat to jump. Land on the balls of your feet and immediately spring into air over the next hurdle. <br>
+      Whileairborne you can tuck in your knees to make the exercise that more effectiv.`,
+      reps: "4 sets -  5-8 obstacles per set",
       img: "../../img/plyHurdles.gif"
     };
 
     var shuttleRuns = {
-      descr: `These are tips for shuttleRuns`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Shuttle Runs *** <br>
+      Set the two cones 8 to 10 meters apart. Start the run in long full of power strides. Use your arms to gain momentum. On average you will make 5-6 steps in the 10 meter range and you will need to decelerate and turn around. <br>
+      When stopping, use the inside of your foot gain a better grip off the ground. We emphasize the power of the push and the length of the single step so make sure that you get your knees up high. `
+      reps: "3 sets - 3 runs per set, rest between runs is 10 seconds.",
       img: "../../img/shuttleRuns.gif"
     };
 
