@@ -64,7 +64,7 @@ $(document).ready(function(){
       descr: `*** Tips for Plyometric Hurdles *** <br>
       Set 5 to 8 hurdles closely one after the other, you can also lay out empty water bottle or anything else to mark the position of the obstacle. <br>
       In this exercise we aim for jump height while moving forward. Because the obstacles (hurdles) are tightly packed, you don't have to go in deep squat to jump. Land on the balls of your feet and immediately spring into air over the next hurdle. <br>
-      Whileairborne you can tuck in your knees to make the exercise that more effectiv.`,
+      Whileairborne you can tuck in your knees to make the exercise that more effective.`,
       reps: "4 sets -  5-8 obstacles per set",
       img: "../../img/plyHurdles.gif"
     };
@@ -72,74 +72,110 @@ $(document).ready(function(){
     var shuttleRuns = {
       descr: `*** Tips for Shuttle Runs *** <br>
       Set the two cones 8 to 10 meters apart. Start the run in long full of power strides. Use your arms to gain momentum. On average you will make 5-6 steps in the 10 meter range and you will need to decelerate and turn around. <br>
-      When stopping, use the inside of your foot gain a better grip off the ground. We emphasize the power of the push and the length of the single step so make sure that you get your knees up high. `
+      When stopping, use the inside of your foot gain a better grip off the ground. We emphasize the power of the push and the length of the single step so make sure that you get your knees up high. `,
       reps: "3 sets - 3 runs per set, rest between runs is 10 seconds.",
       img: "../../img/shuttleRuns.gif"
     };
 
     var latLungeJumps = {
-      descr: `These are tips for latLungeJumps`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Lateral Lunge Jumps *** <br>
+      In this exercise, the most important thing is to maintain control and stability. <br>
+      Nevertheless, aim for height when jumping to the side and forward from and into the lunge position, but always prioritize the stability. There are grave dangers for the knees if the exercise is done improperly. <br>
+      But don't worry, we will point you in the right direction. When you jump forward and to the outside, the inertia tend to rotate your body around the knee of your landing leg, thus pressuring the knee. <br>
+      To solve this, simply engage your core muscles and your hamstrings to stabilize the body. Land soft, with precision`,
+      reps: "3 sets - 3 lunge jumps each leg per set",
       img: "../../img/latLungeJumps.gif"
     };
 
     var drillsL = {
-      descr: `These are tips for drillsL`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for L Drill Runs *** <br>
+      Only video instructions for now. <br>
+      ... will soon be updated with textual instructions. <br>
+      Sorry for the inconvenience...`,
+      reps: "4 sets - 2 runs each side per set",
       img: "../../img/drillsL.gif"
     };
 
     var tuckJumps = {
-      descr: `These are tips for tuckJumps`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Tuck Jumps *** <br>
+      The goal of this exercise is to build up powerful hamstrings while also improving your explosive power. The hamstrings have to work pretty hard to pull the legs up as high as possible after the squat jump. <br>
+      Go down into a deep squat, spring into the air as with the regular box jump but this time try to tuck in midair as much as possible and as fast as you can. Land soft on the ball off your feet with the knees slightly bent.`,
+      reps: "4 sets - 5 reps per set",
       img: "../../img/tuckJumps.gif"
     };
 
     var jumpLunges = {
-      descr: `These are tips for jumpLunges`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Lunge Jumps in Spot *** <br>
+      Stand in the lunge position. Prepare to jump by bending your knees and sink down into a deep lunge. You should lean slightly forward and contract your core muscles. <br>
+      Quickly jump into the air by extending your knees and hips and bring your feet together and switch their positions. You should also switch arms when you do this. Maintain balanced foot position when landing. <br>
+      Your forward knee should be straight over your foot and not in front of it. Forward foot should land in full contact with the surface (heel down) and your back foot should land on the ball of the foot. <br>
+      Go down into a deep lunge and perform the next rep.`,
+      reps: "4 sets - 6 reps per set",
       img: "../../img/jumpLunges.gif"
     };
 
     var latBoxJumps = {
-      descr: `These are tips for latBoxJumps`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Lateral Box Jumps *** <br>
+      If possible, always set the height of the box to above 80% of your max jump height. We are aiming for intensity over volume. </br>
+      Position yourself at 90 degrees next to your box. Make sure the landing surface is clean and dry to avoid slipping and injuring yourself. <br>
+      This variation of the box jump must be performed in equal repetitions on both left and right side.`,
+      reps: "3 sets - 3 reps per set",
       img: "../../img/latBoxJumps.gif"
     };
 
     var skaterJumps = {
-      descr: `These are tips for skaterJumps`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Skater Jumps *** <br>
+      Stand firmly in a position as if you were going to sprint from a standing start. Knees slightly bent and your core engaged. Your back leg lifted from the ground. <br>
+      At the same time, push of the ground to the side and land on your back leg that is now in front of you. Switch your arms midair and the leg that you jumped with is now at the back slightly off the ground. <br>
+      Make sure you land soft, pause for a second and then do another rep to the other side. Make sure you hare properly warmed up.`,
+      reps: "4 sets - 3 reps to each side per set",
       img: "../../img/skaterJumps.gif"
     };
 
     var latJump90Forward = {
-      descr: `*** Tips for Lateral to Forward Jumps (both legs) ***`,
+      descr: `*** Tips for Lateral to Forward Jumps (both legs) *** <br>
+      Set the cones in a letter "T" formation, each 1 meter apart. The exercise should be done in an explosive manner, first and foremost, engaging your core muscles. <br>
+      In a rapid succesion jump to the side and then forward, both legs used. Make sure that your body is straight meaning that you're landing without your knees wandering inside or outside. <br>
+      Even thou the cones are one meter apart, aim for as powerful jump forward as you can. Land into a squat with control over your body. <br>
+      An important matter is that you don't perform this exercise without a proper warm-up. <br>
+      Again, aim for power.`,
       reps: "3 sets - 3 reps on both sides for each set",
       img: "../../latJump90Forward.gif"
-    }
+    };
 
     var latToForwInsLeg = {
-      descr: `These are tips for latToForwInsLeg`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Lateral to Forward Jumps with inside leg *** <br>
+      Set the cones in a letter "T" formation, each 1 meter apart. The exercise should be done in an explosive manner, engaging your core muscles. <br>
+      The first step in this exercise is to stand firmly on one leg, for example left. Jump laterally to the left side and then jump forward using the same leg. <br>
+      The most important thing is to have a proper warm up. Secondly, always land soft and explode afterwards.`,
+      reps: "2 sets - 4 reps each side per set",
       img: "../../img/latToForwInsLeg.gif"
     };
 
     var latToForwOutLeg = {
-      descr: `These are tips for latToForwOutLeg`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Lateral to Forward Jumps with outside leg *** <br>
+      Set the cones in a letter "T" formation, each 1 meter apart. The exercise should be done in an explosive manner, engaging your core muscles. <br>
+      The first step in this exercise is to stand firmly on one leg, for example right. Jump laterally to the left side and then jump forward using the same leg. <br>
+      The most important thing is to have a proper warm up. Secondly, always land soft and explode afterwards.`,
+      reps: "2 sets - 4 reps each side per set",
       img: "../../img/latToForwOutLeg.gif"
     };
 
     var forwToLatInsLeg = {
-      descr: `These are tips for forwToLatInsLeg`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Forward to Lateral Jumps with inside leg *** <br>
+      Set the cones in a letter "T" formation, each 1 meter apart. The exercise should be done in an explosive manner, engaging your core muscles. <br>
+      The first step in this exercise is to stand firmly on one leg, for example left. Jump forward on a single leg and then laterally to the left side with the same leg. <br>
+      The most important thing is to have a proper warm up. Secondly, always land soft and explode afterwards.`,
+      reps: "2 sets - 4 reps each side per set",
       img: "../../img/forwToLatInsLeg.gif"
     };
 
     var forwToLatOutLeg = {
-      descr: `These are tips for forwToLatOutLeg`,
-      reps: " sets -  reps per set",
+      descr: `*** Tips for Forward to Lateral Jumps with outside leg *** <br>
+      Set the cones in a letter "T" formation, each 1 meter apart. The exercise should be done in an explosive manner, engaging your core muscles. <br>
+      The first step in this exercise is to stand firmly on one leg, for example left. Jump forward on a single leg and then laterally to the right side with the same leg. <br>
+      The most important thing is to have a proper warm up. Secondly, always land soft and explode afterwards.`,
+      reps: "2 sets - 4 reps each side per set",
       img: "../../img/forwToLatOutLeg.gif"
     };
 
