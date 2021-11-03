@@ -140,7 +140,7 @@ $(document).ready(function(){
       An important matter is that you don't perform this exercise without a proper warm-up. <br>
       Again, aim for power.`,
       reps: "3 sets - 3 reps on both sides for each set",
-      img: "../../latJump90Forward.gif"
+      img: "../../img/latJump90Forward.gif"
     };
 
     var latToForwInsLeg = {
