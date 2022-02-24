@@ -1,2 +1,3 @@
 # leg
-<h4>Just checking out how <i>commits</i>, <i>pull request</i> and <i>merge</i> work.<h4>
+<h4>No Gym Legs Workout<h4>
+<p>To be updated with full docs as it goes public.</p>
